@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors()); // frontend and backend connect
-app.use(express.json());
+app.use(express.json()); // To read Json data from frontend 
 
 
 
