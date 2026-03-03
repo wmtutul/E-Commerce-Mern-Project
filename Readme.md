@@ -8,3 +8,5 @@ npm i axios react-router
 
 backend
 ========
+npm i express mongoose dotenv cors bcrypt
+npm i --save-dev nodemon 
