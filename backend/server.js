@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config_db/db.js';
 import authRoutes from './src/routes/authRoutes.js';
+import productRoutes from './src/routes/productsRoutes.js';
 
 
 dotenv.config();
@@ -18,6 +19,7 @@ app.use(express.json()); // To read Json data from frontend
 //======Routing=======
 
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
 
 
 
