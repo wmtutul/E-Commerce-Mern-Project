@@ -11,6 +11,9 @@ backend
 npm i express mongoose dotenv cors bcrypt jsonwebtoken
 npm i --save-dev nodemon 
 
+Login: mohit@gmail.com
+pass: 123456
 
-Video-7 Running-----
+Video-10 Running-----
+
 

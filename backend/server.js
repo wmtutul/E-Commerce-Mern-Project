@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import connectDB from './config_db/db.js';
 import authRoutes from './src/routes/authRoutes.js';
 import productRoutes from './src/routes/productsRoutes.js';
+import cartRoutes from './src/routes/cart.js';
 
 
 dotenv.config();
@@ -20,6 +21,7 @@ app.use(express.json()); // To read Json data from frontend
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/cart', cartRoutes);
 
 
 
@@ -31,3 +33,5 @@ connectDB();
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
