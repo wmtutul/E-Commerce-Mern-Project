@@ -5,6 +5,7 @@ import connectDB from './config_db/db.js';
 import authRoutes from './src/routes/authRoutes.js';
 import productRoutes from './src/routes/productsRoutes.js';
 import cartRoutes from './src/routes/cart.js';
+import addressRoutes from './src/routes/address.js';
 
 
 dotenv.config();
@@ -22,7 +23,7 @@ app.use(express.json()); // To read Json data from frontend
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
-
+app.use('/api/address', addressRoutes);
 
 
 //======Database Connectivity============
