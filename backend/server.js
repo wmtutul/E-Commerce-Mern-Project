@@ -6,6 +6,7 @@ import authRoutes from './src/routes/authRoutes.js';
 import productRoutes from './src/routes/productsRoutes.js';
 import cartRoutes from './src/routes/cart.js';
 import addressRoutes from './src/routes/address.js';
+import orderRoutes from './src/routes/order.js';
 
 
 dotenv.config();
@@ -24,6 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/address', addressRoutes);
+app.use('/api/order',orderRoutes )
 
 
 //======Database Connectivity============
@@ -34,5 +36,7 @@ connectDB();
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
 
 
